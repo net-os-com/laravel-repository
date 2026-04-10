@@ -6,19 +6,14 @@ use Illuminate\Support\ServiceProvider;
 
 class RepositoryServiceProvider extends ServiceProvider
 {
-    public function boot()
+    public function boot(): void
     {
         $this->commands([
             Commands\MakeRepositoryCommand::class,
         ]);
     }
 
-    /**
-     * Register the service provider.
-     *
-     * @return void
-     */
-    public function register()
+    public function register(): void
     {
         $this->app->singleton(Repository::class, function ($app) {
             return new Repository($app);

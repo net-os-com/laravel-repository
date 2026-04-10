@@ -7,7 +7,7 @@
 This package allows you to use Repositories and keeps the controllers clean
 
 ### Installation
-This package requires PHP 7.2 and Laravel 5.8 or higher.
+This package requires PHP 8.2+ and Laravel 10, 11, 12, or 13.
 
 ```
 composer require programic/laravel-repository
@@ -33,6 +33,10 @@ class UserController {
 } 
 ```
 
+
+### Laravel Boost
+
+This package includes [Laravel Boost](https://laravel.com/docs/boost) guidelines and skills. When you run `php artisan boost:install`, the repository guidelines and skills are automatically discovered and installed.
 
 ### Testing
 ```bash

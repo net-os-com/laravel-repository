@@ -3,45 +3,35 @@
 namespace Programic\Repository\Commands;
 
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\File;
+use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Str;
 
 class MakeRepositoryCommand extends Command
 {
-    /**
-     * The name and signature of the console command.
-     *
-     * @var string
-     */
     protected $signature = 'make:repository {repository}';
 
-    /**
-     * The console command description.
-     *
-     * @var string
-     */
     protected $description = 'Create a new repository class';
 
+    public function __construct(private Filesystem $filesystem)
+    {
+        parent::__construct();
+    }
 
-    /**
-     * Execute the console command.
-     *
-     * @return mixed
-     * @throws Exception
-     */
-    public function handle()
+    public function handle(): int
     {
         $className = Str::studly($this->argument('repository'));
         $fileName = $className . '.php';
 
-        $stub = File::get(__DIR__ . '/../../stubs/repository.php.stub');
+        $stub = $this->filesystem->get(__DIR__ . '/../../stubs/repository.php.stub');
         $stub = str_replace('REPOSITORY_NAME', $className, $stub);
 
         $path = base_path() . '/app/Repositories';
 
-        File::isDirectory($path) or File::makeDirectory($path);
-        File::put($path . '/' . $fileName, $stub);
+        $this->filesystem->isDirectory($path) or $this->filesystem->makeDirectory($path);
+        $this->filesystem->put($path . '/' . $fileName, $stub);
 
         $this->line('<info>Repository created:</info> ' . $fileName);
+
+        return self::SUCCESS;
     }
 }
