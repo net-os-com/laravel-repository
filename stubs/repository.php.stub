@@ -2,7 +2,7 @@
 
 namespace App\Repositories;
 
-use Programic\Repository\BaseRepository;
+use NetOS\Repository\BaseRepository;
 
 class REPOSITORY_NAME extends BaseRepository
 {

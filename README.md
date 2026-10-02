@@ -1,8 +1,8 @@
-# Programic - Repositories
+# Net OS - Repositories
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/programic/laravel-repository.svg?style=flat-square)](https://packagist.org/packages/programic/laravel-repository)
-![](https://github.com/programic/laravel-repository/workflows/Run%20Tests/badge.svg?branch=master)
-[![Total Downloads](https://img.shields.io/packagist/dt/programic/laravel-repository.svg?style=flat-square)](https://packagist.org/packages/programic/laravel-repository)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/net-os/laravel-repository.svg?style=flat-square)](https://packagist.org/packages/net-os/laravel-repository)
+![](https://github.com/net-os/laravel-repository/workflows/Run%20Tests/badge.svg?branch=master)
+[![Total Downloads](https://img.shields.io/packagist/dt/net-os/laravel-repository.svg?style=flat-square)](https://packagist.org/packages/net-os/laravel-repository)
 
 This package allows you to use Repositories and keeps the controllers clean
 
@@ -10,7 +10,7 @@ This package allows you to use Repositories and keeps the controllers clean
 This package requires PHP 8.2+ and Laravel 10, 11, 12, or 13.
 
 ```
-composer require programic/laravel-repository
+composer require net-os/laravel-repository
 ```
 
 ### Basic Usage
@@ -53,7 +53,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ### Security
 
-If you discover any security-related issues, please email [info@programic.com](mailto:info@programic.com) instead of using the issue tracker.
+If you discover any security-related issues, please email [software@net-os.com](mailto:software@net-os.com) instead of using the issue tracker.
 
 ## Credits
 

@@ -1,6 +1,6 @@
 ---
 name: repository-development
-description: Build and work with Programic Repository features. Use when creating repositories for index/overview endpoints, or implementing the repository pattern for list queries in Laravel. Use this skill whenever working with app/Repositories, BaseRepository, or when the user needs a filtered, sorted, paginated index query.
+description: Build and work with Net OS Repository features. Use when creating repositories for index/overview endpoints, or implementing the repository pattern for list queries in Laravel. Use this skill whenever working with app/Repositories, BaseRepository, or when the user needs a filtered, sorted, paginated index query.
 ---
 
 # Repository Development
@@ -16,7 +16,7 @@ Use this skill when:
 
 - Repositories are exclusively for index/overview queries (listing and filtering data)
 - Repositories live in `app/Repositories/`, optionally in subdirectories per domain (e.g. `app/Repositories/User/UserRepository.php`)
-- Every repository extends `Programic\Repository\BaseRepository`
+- Every repository extends `NetOS\Repository\BaseRepository`
 - Create repositories with `php artisan make:repository {Name}Repository`
 - Use Spatie QueryBuilder (`QueryBuilder::for()`) for building queries with filters, sorts, and includes
 
@@ -26,7 +26,7 @@ Build query methods using `QueryBuilder::for(Model::query())`. A `fromRequest` m
 
 ```php
 use App\Models\User;
-use Programic\Repository\BaseRepository;
+use NetOS\Repository\BaseRepository;
 use Spatie\QueryBuilder\AllowedFilter;
 use Spatie\QueryBuilder\AllowedInclude;
 use Spatie\QueryBuilder\AllowedSort;

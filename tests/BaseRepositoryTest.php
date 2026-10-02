@@ -1,9 +1,9 @@
 <?php
 
-namespace Programic\Repository\Tests;
+namespace NetOS\Repository\Tests;
 
 use Illuminate\Database\Eloquent\Model;
-use Programic\Repository\BaseRepository;
+use NetOS\Repository\BaseRepository;
 
 class TestModel extends Model
 {

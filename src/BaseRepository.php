@@ -1,6 +1,6 @@
 <?php
 
-namespace Programic\Repository;
+namespace NetOS\Repository;
 
 use Illuminate\Database\Eloquent\Model;
 

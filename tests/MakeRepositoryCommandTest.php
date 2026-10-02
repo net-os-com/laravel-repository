@@ -1,6 +1,6 @@
 <?php
 
-namespace Programic\Repository\Tests;
+namespace NetOS\Repository\Tests;
 
 use Illuminate\Support\Facades\File;
 

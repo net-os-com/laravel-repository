@@ -1,14 +1,14 @@
 {
-    "name": "programic/laravel-repository",
+    "name": "net-os/laravel-repository",
     "license": "proprietary",
     "type": "package",
     "description": "Using repositories in Laravel",
     "readme": "README.md",
     "authors": [
         {
-            "name": "Programic",
-            "email": "development@programic.com",
-            "homepage": "https://programic.com",
+            "name": "Net OS",
+            "email": "software@net-os.com",
+            "homepage": "https://net-os.com",
             "role": "Developer"
         }
     ],
@@ -24,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Programic\\Repository\\": "src/"
+            "NetOS\\Repository\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Programic\\Repository\\Tests\\": "tests/"
+            "NetOS\\Repository\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -38,7 +38,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Programic\\Repository\\RepositoryServiceProvider"
+                "NetOS\\Repository\\RepositoryServiceProvider"
             ]
         }
     }

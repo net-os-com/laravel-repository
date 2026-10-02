@@ -1,6 +1,6 @@
 <?php
 
-namespace Programic\Repository;
+namespace NetOS\Repository;
 
 interface RepositoryInterface
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Programic\Repository\Tests;
+namespace NetOS\Repository\Tests;
 
 use Orchestra\Testbench\TestCase as BaseTestCase;
-use Programic\Repository\RepositoryServiceProvider;
+use NetOS\Repository\RepositoryServiceProvider;
 
 abstract class TestCase extends BaseTestCase
 {

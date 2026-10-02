@@ -1,4 +1,4 @@
-## Programic Repository
+## Net OS Repository
 
 This package provides the repository pattern for Laravel index endpoints. Repositories encapsulate list/overview query logic using Spatie QueryBuilder, keeping controllers clean.
 
@@ -17,7 +17,7 @@ Repositories contain query methods that use `QueryBuilder::for()` to build filte
 @verbatim
 <code-snippet name="Repository for index endpoint" lang="php">
 use App\Models\User;
-use Programic\Repository\BaseRepository;
+use NetOS\Repository\BaseRepository;
 use Spatie\QueryBuilder\AllowedFilter;
 use Spatie\QueryBuilder\AllowedSort;
 use Spatie\QueryBuilder\QueryBuilder;
@@ -42,6 +42,6 @@ class UserRepository extends BaseRepository
 
 - Repositories live in `app/Repositories/`, optionally in subdirectories per domain
 - One repository per model
-- Repositories extend `Programic\Repository\BaseRepository`
+- Repositories extend `NetOS\Repository\BaseRepository`
 - Repositories are only used for index/overview queries
 - Use Spatie QueryBuilder for building filtered, sorted, and paginated queries
